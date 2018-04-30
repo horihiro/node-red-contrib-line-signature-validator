@@ -1,0 +1,33 @@
+<script type="text/javascript">
+    RED.nodes.registerType('validator',{
+        category: 'LINE Bot',
+        color: '#C7E9C0',
+        defaults: {
+            name: {value: ''},
+            channelSecret: {value: ''}
+        },
+        inputs:1,
+        outputs:2,
+        outputLabels:[
+            'valid',
+            'invalid'
+        ],
+        icon: 'hash.png',
+        label: function() {
+            return this.name || 'validator';
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="validator">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+        <label for="node-input-channelSecret"><i class="icon-tag"></i>Channel Secret</label>
+        <input type="password" id="node-input-channelSecret" placeholder="Channel Secret">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="validator">
+    <p>LINE webhook message signature validator.</p>
+</script>
