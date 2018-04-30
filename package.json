@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-line-signature-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "node-red": {
     "nodes": {
@@ -23,7 +23,11 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.4.0"
   },
-  "keywords": [],
+  "keywords": [
+    "node-red",
+    "LINE",
+    "Messaging"
+  ],
   "author": "",
   "license": "MIT"
 }
